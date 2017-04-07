@@ -126,15 +126,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes">
-            function <span class="apidocSignatureSpan">autoprefixer.</span>prefixes
-            <span class="apidocSignatureSpan">(data1, browsers, options)</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.process">
             function <span class="apidocSignatureSpan">autoprefixer.</span>process
             <span class="apidocSignatureSpan">(root, opts)</span>
@@ -247,12 +238,6 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">autoprefixer.</span>prefixer.prototype</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">autoprefixer.</span>prefixes.prototype</span>
 
         </li>
 
@@ -787,113 +772,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixer.prototype.process">
             function <span class="apidocSignatureSpan">autoprefixer.prefixer.prototype.</span>process
             <span class="apidocSignatureSpan">(node)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.autoprefixer.prefixes">module autoprefixer.prefixes</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prefixes">
-            function <span class="apidocSignatureSpan">autoprefixer.</span>prefixes
-            <span class="apidocSignatureSpan">(data1, browsers, options)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.autoprefixer.prefixes.prototype">module autoprefixer.prefixes.prototype</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.cleaner">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>cleaner
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.decl">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>decl
-            <span class="apidocSignatureSpan">(prop)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.group">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>group
-            <span class="apidocSignatureSpan">(decl)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.normalize">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>normalize
-            <span class="apidocSignatureSpan">(prop)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.prefixed">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>prefixed
-            <span class="apidocSignatureSpan">(prop, prefix)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.preprocess">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>preprocess
-            <span class="apidocSignatureSpan">(selected)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.select">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>select
-            <span class="apidocSignatureSpan">(list)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.sort">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>sort
-            <span class="apidocSignatureSpan">(prefixes)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.unprefixed">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>unprefixed
-            <span class="apidocSignatureSpan">(prop)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.autoprefixer.prefixes.prototype.values">
-            function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>values
-            <span class="apidocSignatureSpan">(type, prop)</span>
             </a>
 
         </li>
@@ -1859,43 +1737,6 @@ for (j = 0, len = ref1.length; j &#x3c; len; j++) {
 
 
     <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes" id="apidoc.element.autoprefixer.prefixes">
-        function <span class="apidocSignatureSpan">autoprefixer.</span>prefixes
-        <span class="apidocSignatureSpan">(data1, browsers, options)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Prefixes(data1, browsers, options) {
-  var ref;
-  this.data = data1;
-  this.browsers = browsers;
-  this.options = options != null ? options : {};
-  ref = this.preprocess(this.select(this.data)), this.add = ref[0], this.remove = ref[1];
-  this.transition = new Transition(this);
-  this.processor = new Processor(this);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  })()).sort(function(a, b) {
-    return b.length - a.length;
-  });
-};
-
-Browsers.withPrefix = function(value) {
-  if (!this.prefixesRegexp) {
-    this.prefixesRegexp = RegExp(&#x22;&#x22; + (this.<span class="apidocCodeKeywordSpan">prefixes</span>().join(&#x27;|&#x27;)));
-  }
-  return this.prefixesRegexp.test(value);
-};
-
-function Browsers(data1, requirements, options, stats) {
-  this.data = data1;
-  this.options = options;
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
         <a href="#apidoc.element.autoprefixer.process" id="apidoc.element.autoprefixer.process">
         function <span class="apidocSignatureSpan">autoprefixer.</span>process
         <span class="apidocSignatureSpan">(root, opts)</span>
@@ -2067,8 +1908,6 @@ Value.prototype.old = function(prefix) {
 
 
 
-
-
 </div>
 
 <div class="apidocSectionDiv">
@@ -2144,22 +1983,7 @@ AtRule.prototype.process = function(node) {
   }
   return results;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-Value = require(&#x27;./value&#x27;);
-
-utils = require(&#x27;./utils&#x27;);
-
-vendor = require(&#x27;postcss/lib/vendor&#x27;);
-
-Selector.<span class="apidocCodeKeywordSpan">hack</span>(require(&#x27;./hacks/fullscreen&#x27;));
-
-Selector.hack(require(&#x27;./hacks/placeholder&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/flex&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/order&#x27;));
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2180,23 +2004,7 @@ Declaration.hack(require(&#x27;./hacks/order&#x27;));
     return new this(name, prefixes, all);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      for (name in ref) {
-prefixes = ref[name];
-if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-  add[name] = new AtRule(name, prefixes, this);
-} else if (name === &#x27;@resolution&#x27;) {
-  add[name] = new Resolution(name, prefixes, this);
-} else if (this.data[name].selector) {
-  add.selectors.push(Selector.<span class="apidocCodeKeywordSpan">load</span>(name, prefixes, this));
-} else {
-  props = this.data[name].props;
-  if (props) {
-    value = Value.load(name, prefixes, this);
-    for (j = 0, len = props.length; j &#x3c; len; j++) {
-      prop = props[j];
-      if (!add[prop]) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2499,23 +2307,7 @@ function Browsers(data1, requirements, options, stats) {
   }
   return this.prefixesRegexp.test(value);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        return function(step, callback) {
-var other;
-index += step;
-while (index &#x3e;= 0 &#x26;&#x26; index &#x3c; length) {
-  other = rule.nodes[index];
-  if (other.type === &#x27;decl&#x27;) {
-    if (step === -1 &#x26;&#x26; other.prop === unprefixed) {
-      if (!Browsers.<span class="apidocCodeKeywordSpan">withPrefix</span>(other.value)) {
-        break;
-      }
-    }
-    if (_this.unprefixed(other.prop) !== unprefixed) {
-      break;
-    } else if (callback(other) === true) {
-      return true;
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2560,23 +2352,7 @@ while (index &#x3e;= 0 &#x26;&#x26; index &#x3c; length) {
     <li>description and source-code<pre class="apidocCodePre">isSelected = function (browser) {
   return this.selected.indexOf(browser) !== -1;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  return function(i) {
-    return _this.browsers.prefix(i.browser) + &#x27; &#x27; + i.note;
-  };
-})(this));
-notes = utils.uniq(notes);
-add = add.filter((function(_this) {
-  return function(i) {
-    return _this.browsers.<span class="apidocCodeKeywordSpan">isSelected</span>(i.browser);
-  };
-})(this)).map((function(_this) {
-  return function(i) {
-    var prefix;
-    prefix = _this.browsers.prefix(i.browser);
-    if (i.note) {
-      return prefix + &#x27; &#x27; + i.note;
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2731,22 +2507,7 @@ AtRule.prototype.process = function(node) {
   }
   return results;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-Value = require(&#x27;./value&#x27;);
-
-utils = require(&#x27;./utils&#x27;);
-
-vendor = require(&#x27;postcss/lib/vendor&#x27;);
-
-Selector.<span class="apidocCodeKeywordSpan">hack</span>(require(&#x27;./hacks/fullscreen&#x27;));
-
-Selector.hack(require(&#x27;./hacks/placeholder&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/flex&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/order&#x27;));
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2767,23 +2528,7 @@ Declaration.hack(require(&#x27;./hacks/order&#x27;));
     return new this(name, prefixes, all);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      for (name in ref) {
-prefixes = ref[name];
-if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-  add[name] = new AtRule(name, prefixes, this);
-} else if (name === &#x27;@resolution&#x27;) {
-  add[name] = new Resolution(name, prefixes, this);
-} else if (this.data[name].selector) {
-  add.selectors.push(Selector.<span class="apidocCodeKeywordSpan">load</span>(name, prefixes, this));
-} else {
-  props = this.data[name].props;
-  if (props) {
-    value = Value.load(name, prefixes, this);
-    for (j = 0, len = props.length; j &#x3c; len; j++) {
-      prop = props[j];
-      if (!add[prop]) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -3104,21 +2849,21 @@ Declaration.prototype.isAlready = function(decl, prefixed) {
   return prop;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  } else {
-    return declsCache[prop] = Declaration.load(prop);
+rule = decl.parent;
+unprefixed = _this.prefixes.unprefixed(decl.prop);
+if (decl.prop === &#x27;transition&#x27; || decl.prop === &#x27;transition-property&#x27;) {
+  _this.prefixes.transition.remove(decl);
+}
+if ((ref1 = _this.prefixes.remove[decl.prop]) != null ? ref1.remove : void 0) {
+  notHack = _this.prefixes.group(decl).down(function(other) {
+    return _this.prefixes.<span class="apidocCodeKeywordSpan">normalize</span>(other.prop) === unprefixed;
+  });
+  if (unprefixed === &#x27;flex-flow&#x27;) {
+    notHack = true;
   }
-};
-
-Prefixes.prototype.unprefixed = function(prop) {
-  var value;
-  value = this.<span class="apidocCodeKeywordSpan">normalize</span>(vendor.unprefixed(prop));
-  if (value === &#x27;flex-direction&#x27;) {
-    value = &#x27;flex-flow&#x27;;
-  }
-  return value;
-};
-
-Prefixes.prototype.normalize = function(prop) {
+  if (notHack &#x26;&#x26; !_this.withHackValue(decl)) {
+    if (decl.raw(&#x27;before&#x27;).indexOf(&#x22;\n&#x22;) &#x3e; -1) {
+      _this.reduceSpaces(decl);
 ...</pre></li>
     </ul>
 
@@ -3134,23 +2879,7 @@ Prefixes.prototype.normalize = function(prop) {
     <li>description and source-code<pre class="apidocCodePre">old = function (prop, prefix) {
   return [this.prefixed(prop, prefix)];
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-ref2 = selected.remove;
-for (name in ref2) {
-  prefixes = ref2[name];
-  if (this.data[name].selector) {
-    selector = Selector.load(name, prefixes);
-    for (k = 0, len1 = prefixes.length; k &#x3c; len1; k++) {
-      prefix = prefixes[k];
-      remove.selectors.push(selector.<span class="apidocCodeKeywordSpan">old</span>(prefix));
-    }
-  } else if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-    for (l = 0, len2 = prefixes.length; l &#x3c; len2; l++) {
-      prefix = prefixes[l];
-      prefixed = &#x27;@&#x27; + prefix + name.slice(1);
-      remove[prefixed] = {
-        remove: true
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -3630,22 +3359,7 @@ AtRule.prototype.process = function(node) {
   }
   return results;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-Value = require(&#x27;./value&#x27;);
-
-utils = require(&#x27;./utils&#x27;);
-
-vendor = require(&#x27;postcss/lib/vendor&#x27;);
-
-Selector.<span class="apidocCodeKeywordSpan">hack</span>(require(&#x27;./hacks/fullscreen&#x27;));
-
-Selector.hack(require(&#x27;./hacks/placeholder&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/flex&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/order&#x27;));
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -3666,23 +3380,7 @@ Declaration.hack(require(&#x27;./hacks/order&#x27;));
     return new this(name, prefixes, all);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      for (name in ref) {
-prefixes = ref[name];
-if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-  add[name] = new AtRule(name, prefixes, this);
-} else if (name === &#x27;@resolution&#x27;) {
-  add[name] = new Resolution(name, prefixes, this);
-} else if (this.data[name].selector) {
-  add.selectors.push(Selector.<span class="apidocCodeKeywordSpan">load</span>(name, prefixes, this));
-} else {
-  props = this.data[name].props;
-  if (props) {
-    value = Value.load(name, prefixes, this);
-    for (j = 0, len = props.length; j &#x3c; len; j++) {
-      prop = props[j];
-      if (!add[prop]) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -3807,612 +3505,6 @@ cleaner.<span class="apidocCodeKeywordSpan">process</span>(css).then(function (c
 ```
 
 ## FAQ
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.autoprefixer.prefixes" id="apidoc.module.autoprefixer.prefixes">module autoprefixer.prefixes</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prefixes" id="apidoc.element.autoprefixer.prefixes.prefixes">
-        function <span class="apidocSignatureSpan">autoprefixer.</span>prefixes
-        <span class="apidocSignatureSpan">(data1, browsers, options)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Prefixes(data1, browsers, options) {
-  var ref;
-  this.data = data1;
-  this.browsers = browsers;
-  this.options = options != null ? options : {};
-  ref = this.preprocess(this.select(this.data)), this.add = ref[0], this.remove = ref[1];
-  this.transition = new Transition(this);
-  this.processor = new Processor(this);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  })()).sort(function(a, b) {
-    return b.length - a.length;
-  });
-};
-
-Browsers.withPrefix = function(value) {
-  if (!this.prefixesRegexp) {
-    this.prefixesRegexp = RegExp(&#x22;&#x22; + (this.<span class="apidocCodeKeywordSpan">prefixes</span>().join(&#x27;|&#x27;)));
-  }
-  return this.prefixesRegexp.test(value);
-};
-
-function Browsers(data1, requirements, options, stats) {
-  this.data = data1;
-  this.options = options;
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.autoprefixer.prefixes.prototype" id="apidoc.module.autoprefixer.prefixes.prototype">module autoprefixer.prefixes.prototype</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.cleaner" id="apidoc.element.autoprefixer.prefixes.prototype.cleaner">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>cleaner
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">cleaner = function () {
-  var empty;
-  if (!this.cleanerCache) {
-    if (this.browsers.selected.length) {
-      empty = new Browsers(this.browsers.data, []);
-      this.cleanerCache = new Prefixes(this.data, empty, this.options);
-    } else {
-      return this;
-    }
-  }
-  return this.cleanerCache;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  return !check.test(all);
-};
-
-Supports.prototype.toRemove = function(str, all) {
-  var checker, j, len, prop, ref1, ref2, ref3, unprefixed, value;
-  ref1 = this.parse(str), prop = ref1[0], value = ref1[1];
-  unprefixed = this.all.unprefixed(prop);
-  if (((ref2 = this.all.<span class="apidocCodeKeywordSpan">cleaner</span>().remove[prop]) != null ? ref2.remove : void 0) &#x26
-;&#x26; !this.isHack(all, unprefixed)) {
-    return true;
-  }
-  ref3 = this.all.cleaner().values(&#x27;remove&#x27;, unprefixed);
-  for (j = 0, len = ref3.length; j &#x3c; len; j++) {
-    checker = ref3[j];
-    if (checker.check(value)) {
-      return true;
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.decl" id="apidoc.element.autoprefixer.prefixes.prototype.decl">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>decl
-        <span class="apidocSignatureSpan">(prop)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">decl = function (prop) {
-  var decl;
-  decl = declsCache[prop];
-  if (decl) {
-    return decl;
-  } else {
-    return declsCache[prop] = Declaration.load(prop);
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      }
-    }
-  }
-} else {
-  for (o = 0, len5 = prefixes.length; o &#x3c; len5; o++) {
-    prefix = prefixes[o];
-    prop = vendor.unprefixed(name);
-    olds = this.<span class="apidocCodeKeywordSpan">decl</span>(name).old(name, prefix);
-    if (name === &#x27;align-self&#x27;) {
-      a = (ref3 = add[name]) != null ? ref3.prefixes : void 0;
-      if (a) {
-        if (prefix === &#x27;-webkit- 2009&#x27; &#x26;&#x26; a.indexOf(&#x27;-webkit-&#x27;) !== -1) {
-          continue;
-        } else if (prefix === &#x27;-webkit-&#x27; &#x26;&#x26; a.indexOf(&#x27;-webkit- 2009&#x27;) !== -1) {
-          continue;
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.group" id="apidoc.element.autoprefixer.prefixes.prototype.group">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>group
-        <span class="apidocSignatureSpan">(decl)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">group = function (decl) {
-  var checker, index, length, rule, unprefixed;
-  rule = decl.parent;
-  index = rule.index(decl);
-  length = rule.nodes.length;
-  unprefixed = this.unprefixed(decl.prop);
-  checker = (function(_this) {
-    return function(step, callback) {
-      var other;
-      index += step;
-      while (index &#x3e;= 0 &#x26;&#x26; index &#x3c; length) {
-        other = rule.nodes[index];
-        if (other.type === &#x27;decl&#x27;) {
-          if (step === -1 &#x26;&#x26; other.prop === unprefixed) {
-            if (!Browsers.withPrefix(other.value)) {
-              break;
-            }
-          }
-          if (_this.unprefixed(other.prop) !== unprefixed) {
-            break;
-          } else if (callback(other) === true) {
-            return true;
-          }
-          if (step === +1 &#x26;&#x26; other.prop === unprefixed) {
-            if (!Browsers.withPrefix(other.value)) {
-              break;
-            }
-          }
-        }
-        index += step;
-      }
-      return false;
-    };
-  })(this);
-  return {
-    up: function(callback) {
-      return checker(-1, callback);
-    },
-    down: function(callback) {
-      return checker(+1, callback);
-    }
-  };
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  return before;
-};
-
-Declaration.prototype.restoreBefore = function(decl) {
-  var lines, min;
-  lines = decl.raw(&#x27;before&#x27;).split(&#x22;\n&#x22;);
-  min = lines[lines.length - 1];
-  this.all.<span class="apidocCodeKeywordSpan">group</span>(decl).up(function(prefixed) {
-    var array, last;
-    array = prefixed.raw(&#x27;before&#x27;).split(&#x22;\n&#x22;);
-    last = array[array.length - 1];
-    if (last.length &#x3c; min.length) {
-      return min = last;
-    }
-  });
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.normalize" id="apidoc.element.autoprefixer.prefixes.prototype.normalize">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>normalize
-        <span class="apidocSignatureSpan">(prop)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">normalize = function (prop) {
-  return this.decl(prop).normalize(prop);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  } else {
-    return declsCache[prop] = Declaration.load(prop);
-  }
-};
-
-Prefixes.prototype.unprefixed = function(prop) {
-  var value;
-  value = this.<span class="apidocCodeKeywordSpan">normalize</span>(vendor.unprefixed(prop));
-  if (value === &#x27;flex-direction&#x27;) {
-    value = &#x27;flex-flow&#x27;;
-  }
-  return value;
-};
-
-Prefixes.prototype.normalize = function(prop) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.prefixed" id="apidoc.element.autoprefixer.prefixes.prototype.prefixed">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>prefixed
-        <span class="apidocSignatureSpan">(prop, prefix)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">prefixed = function (prop, prefix) {
-  prop = vendor.unprefixed(prop);
-  return this.decl(prop).prefixed(prop, prefix);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      return true;
-    }
-  }
-  return false;
-};
-
-Declaration.prototype.set = function(decl, prefix) {
-  decl.prop = this.<span class="apidocCodeKeywordSpan">prefixed</span>(decl.prop, prefix);
-  return decl;
-};
-
-Declaration.prototype.needCascade = function(decl) {
-  return decl._autoprefixerCascade || (decl._autoprefixerCascade = this.all.options.cascade !== false &#x26;&#x26; decl.raw(&#x27
-;before&#x27;).indexOf(&#x27;\n&#x27;) !== -1);
-};
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.preprocess" id="apidoc.element.autoprefixer.prefixes.prototype.preprocess">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>preprocess
-        <span class="apidocSignatureSpan">(selected)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">preprocess = function (selected) {
-  var a, add, j, k, l, len, len1, len2, len3, len4, len5, len6, m, n, name, o, old, olds, p, prefix, prefixed, prefixes, prop, props
-, ref, ref1, ref2, ref3, remove, selector, value, values;
-  add = {
-    selectors: [],
-    &#x27;@supports&#x27;: new Supports(Prefixes, this)
-  };
-  ref = selected.add;
-  for (name in ref) {
-    prefixes = ref[name];
-    if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-      add[name] = new AtRule(name, prefixes, this);
-    } else if (name === &#x27;@resolution&#x27;) {
-      add[name] = new Resolution(name, prefixes, this);
-    } else if (this.data[name].selector) {
-      add.selectors.push(Selector.load(name, prefixes, this));
-    } else {
-      props = this.data[name].props;
-      if (props) {
-        value = Value.load(name, prefixes, this);
-        for (j = 0, len = props.length; j &#x3c; len; j++) {
-          prop = props[j];
-          if (!add[prop]) {
-            add[prop] = {
-              values: []
-            };
-          }
-          add[prop].values.push(value);
-        }
-      } else {
-        values = ((ref1 = add[name]) != null ? ref1.values : void 0) || [];
-        add[name] = Declaration.load(name, prefixes, this);
-        add[name].values = values;
-      }
-    }
-  }
-  remove = {
-    selectors: []
-  };
-  ref2 = selected.remove;
-  for (name in ref2) {
-    prefixes = ref2[name];
-    if (this.data[name].selector) {
-      selector = Selector.load(name, prefixes);
-      for (k = 0, len1 = prefixes.length; k &#x3c; len1; k++) {
-        prefix = prefixes[k];
-        remove.selectors.push(selector.old(prefix));
-      }
-    } else if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-      for (l = 0, len2 = prefixes.length; l &#x3c; len2; l++) {
-        prefix = prefixes[l];
-        prefixed = &#x27;@&#x27; + prefix + name.slice(1);
-        remove[prefixed] = {
-          remove: true
-        };
-      }
-    } else if (name === &#x27;@resolution&#x27;) {
-      remove[name] = new Resolution(name, prefixes, this);
-    } else {
-      props = this.data[name].props;
-      if (props) {
-        value = Value.load(name, [], this);
-        for (m = 0, len3 = prefixes.length; m &#x3c; len3; m++) {
-          prefix = prefixes[m];
-          old = value.old(prefix);
-          if (old) {
-            for (n = 0, len4 = props.length; n &#x3c; len4; n++) {
-              prop = props[n];
-              if (!remove[prop]) {
-                remove[prop] = {};
-              }
-              if (!remove[prop].values) {
-                remove[prop].values = [];
-              }
-              remove[prop].values.push(old);
-            }
-          }
-        }
-      } else {
-        for (o = 0, len5 = prefixes.length; o &#x3c; len5; o++) {
-          prefix = prefixes[o];
-          prop = vendor.unprefixed(name);
-          olds = this.decl(name).old(name, prefix);
-          if (name === &#x27;align-self&#x27;) {
-            a = (ref3 = add[name]) != null ? ref3.prefixes : void 0;
-            if (a) {
-              if (prefix === &#x27;-webkit- 2009&#x27; &#x26;&#x26; a.indexOf(&#x27;-webkit-&#x27;) !== -1) {
-                continue;
-              } else if (prefix === &#x27;-webkit-&#x27; &#x26;&#x26; a.indexOf(&#x27;-webkit- 2009&#x27;) !== -1) {
-                continue;
-              }
-            }
-          }
-          for (p = 0, len6 = olds.length; p &#x3c; len6; p++) {
-            prefixed = olds[p];
-            if (!remove[prefixed]) {
-              remove[prefixed] = {};
-            }
-            remove[prefixed].remove = true;
-          }
-        }
-      }
-    }
-  }
-  return [add, remove];
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-  Prefixes = (function() {
-function Prefixes(data1, browsers, options) {
-  var ref;
-  this.data = data1;
-  this.browsers = browsers;
-  this.options = options != null ? options : {};
-  ref = this.<span class="apidocCodeKeywordSpan">preprocess</span>(this.select(this.data)), this.add = ref[0], this.remove = ref
-[1];
-  this.transition = new Transition(this);
-  this.processor = new Processor(this);
-}
-
-Prefixes.prototype.cleaner = function() {
-  var empty;
-  if (!this.cleanerCache) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.select" id="apidoc.element.autoprefixer.prefixes.prototype.select">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>select
-        <span class="apidocSignatureSpan">(list)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">select = function (list) {
-  var add, all, data, name, notes, selected;
-  selected = {
-    add: {},
-    remove: {}
-  };
-  for (name in list) {
-    data = list[name];
-    add = data.browsers.map(function(i) {
-      var params;
-      params = i.split(&#x27; &#x27;);
-      return {
-        browser: params[0] + &#x27; &#x27; + params[1],
-        note: params[2]
-      };
-    });
-    notes = add.filter(function(i) {
-      return i.note;
-    }).map((function(_this) {
-      return function(i) {
-        return _this.browsers.prefix(i.browser) + &#x27; &#x27; + i.note;
-      };
-    })(this));
-    notes = utils.uniq(notes);
-    add = add.filter((function(_this) {
-      return function(i) {
-        return _this.browsers.isSelected(i.browser);
-      };
-    })(this)).map((function(_this) {
-      return function(i) {
-        var prefix;
-        prefix = _this.browsers.prefix(i.browser);
-        if (i.note) {
-          return prefix + &#x27; &#x27; + i.note;
-        } else {
-          return prefix;
-        }
-      };
-    })(this));
-    add = this.sort(utils.uniq(add));
-    if (this.options.flexbox === &#x27;no-2009&#x27;) {
-      add = add.filter(function(i) {
-        return i.indexOf(&#x27;2009&#x27;) === -1;
-      });
-    }
-    all = data.browsers.map((function(_this) {
-      return function(i) {
-        return _this.browsers.prefix(i);
-      };
-    })(this));
-    if (data.mistakes) {
-      all = all.concat(data.mistakes);
-    }
-    all = all.concat(notes);
-    all = utils.uniq(all);
-    if (add.length) {
-      selected.add[name] = add;
-      if (add.length &#x3c; all.length) {
-        selected.remove[name] = all.filter(function(i) {
-          return add.indexOf(i) === -1;
-        });
-      }
-    } else {
-      selected.remove[name] = all;
-    }
-  }
-  return selected;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-  Prefixes = (function() {
-function Prefixes(data1, browsers, options) {
-  var ref;
-  this.data = data1;
-  this.browsers = browsers;
-  this.options = options != null ? options : {};
-  ref = this.preprocess(this.<span class="apidocCodeKeywordSpan">select</span>(this.data)), this.add = ref[0], this.remove = ref
-[1];
-  this.transition = new Transition(this);
-  this.processor = new Processor(this);
-}
-
-Prefixes.prototype.cleaner = function() {
-  var empty;
-  if (!this.cleanerCache) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.sort" id="apidoc.element.autoprefixer.prefixes.prototype.sort">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>sort
-        <span class="apidocSignatureSpan">(prefixes)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">sort = function (prefixes) {
-  return prefixes.sort(function(a, b) {
-    var aLength, bLength;
-    aLength = utils.removeNote(a).length;
-    bLength = utils.removeNote(b).length;
-    if (aLength === bLength) {
-      return b.length - a.length;
-    } else {
-      return bLength - aLength;
-    }
-  });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    var results;
-    results = [];
-    for (name in data) {
-      i = data[name];
-      results.push(&#x22;-&#x22; + i.prefix + &#x22;-&#x22;);
-    }
-    return results;
-  })()).<span class="apidocCodeKeywordSpan">sort</span>(function(a, b) {
-    return b.length - a.length;
-  });
-};
-
-Browsers.withPrefix = function(value) {
-  if (!this.prefixesRegexp) {
-    this.prefixesRegexp = RegExp(&#x22;&#x22; + (this.prefixes().join(&#x27;|&#x27;)));
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.unprefixed" id="apidoc.element.autoprefixer.prefixes.prototype.unprefixed">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>unprefixed
-        <span class="apidocSignatureSpan">(prop)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">unprefixed = function (prop) {
-  var value;
-  value = this.normalize(vendor.unprefixed(prop));
-  if (value === &#x27;flex-direction&#x27;) {
-    value = &#x27;flex-flow&#x27;;
-  }
-  return value;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        remove[prop].values.push(old);
-      }
-    }
-  }
-} else {
-  for (o = 0, len5 = prefixes.length; o &#x3c; len5; o++) {
-    prefix = prefixes[o];
-    prop = vendor.<span class="apidocCodeKeywordSpan">unprefixed</span>(name);
-    olds = this.decl(name).old(name, prefix);
-    if (name === &#x27;align-self&#x27;) {
-      a = (ref3 = add[name]) != null ? ref3.prefixes : void 0;
-      if (a) {
-        if (prefix === &#x27;-webkit- 2009&#x27; &#x26;&#x26; a.indexOf(&#x27;-webkit-&#x27;) !== -1) {
-          continue;
-        } else if (prefix === &#x27;-webkit-&#x27; &#x26;&#x26; a.indexOf(&#x27;-webkit- 2009&#x27;) !== -1) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.autoprefixer.prefixes.prototype.values" id="apidoc.element.autoprefixer.prefixes.prototype.values">
-        function <span class="apidocSignatureSpan">autoprefixer.prefixes.prototype.</span>values
-        <span class="apidocSignatureSpan">(type, prop)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">values = function (type, prop) {
-  var data, global, ref, ref1, values;
-  data = this[type];
-  global = (ref = data[&#x27;*&#x27;]) != null ? ref.values : void 0;
-  values = (ref1 = data[prop]) != null ? ref1.values : void 0;
-  if (global &#x26;&#x26; values) {
-    return utils.uniq(global.concat(values));
-  } else {
-    return global || values || [];
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-return css.walkDecls((function(_this) {
-  return function(decl) {
-    var j, len, ref, unprefixed, value;
-    if (_this.disabled(decl)) {
-      return;
-    }
-    unprefixed = _this.prefixes.unprefixed(decl.prop);
-    ref = _this.prefixes.<span class="apidocCodeKeywordSpan">values</span>(&#x27;add&#x27;, unprefixed);
-    for (j = 0, len = ref.length; j &#x3c; len; j++) {
-      value = ref[j];
-      value.process(decl, result);
-    }
-    return Value.save(_this.prefixes, decl);
-  };
-})(this));
 ...</pre></li>
     </ul>
 
@@ -4949,22 +4041,7 @@ AtRule.prototype.process = function(node) {
   }
   return results;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-Value = require(&#x27;./value&#x27;);
-
-utils = require(&#x27;./utils&#x27;);
-
-vendor = require(&#x27;postcss/lib/vendor&#x27;);
-
-Selector.<span class="apidocCodeKeywordSpan">hack</span>(require(&#x27;./hacks/fullscreen&#x27;));
-
-Selector.hack(require(&#x27;./hacks/placeholder&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/flex&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/order&#x27;));
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -4985,23 +4062,7 @@ Declaration.hack(require(&#x27;./hacks/order&#x27;));
     return new this(name, prefixes, all);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      for (name in ref) {
-prefixes = ref[name];
-if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-  add[name] = new AtRule(name, prefixes, this);
-} else if (name === &#x27;@resolution&#x27;) {
-  add[name] = new Resolution(name, prefixes, this);
-} else if (this.data[name].selector) {
-  add.selectors.push(Selector.<span class="apidocCodeKeywordSpan">load</span>(name, prefixes, this));
-} else {
-  props = this.data[name].props;
-  if (props) {
-    value = Value.load(name, prefixes, this);
-    for (j = 0, len = props.length; j &#x3c; len; j++) {
-      prop = props[j];
-      if (!add[prop]) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -5298,22 +4359,7 @@ AtRule.prototype.process = function(node) {
   }
   return results;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-Value = require(&#x27;./value&#x27;);
-
-utils = require(&#x27;./utils&#x27;);
-
-vendor = require(&#x27;postcss/lib/vendor&#x27;);
-
-Selector.<span class="apidocCodeKeywordSpan">hack</span>(require(&#x27;./hacks/fullscreen&#x27;));
-
-Selector.hack(require(&#x27;./hacks/placeholder&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/flex&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/order&#x27;));
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -5334,23 +4380,7 @@ Declaration.hack(require(&#x27;./hacks/order&#x27;));
     return new this(name, prefixes, all);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      for (name in ref) {
-prefixes = ref[name];
-if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-  add[name] = new AtRule(name, prefixes, this);
-} else if (name === &#x27;@resolution&#x27;) {
-  add[name] = new Resolution(name, prefixes, this);
-} else if (this.data[name].selector) {
-  add.selectors.push(Selector.<span class="apidocCodeKeywordSpan">load</span>(name, prefixes, this));
-} else {
-  props = this.data[name].props;
-  if (props) {
-    value = Value.load(name, prefixes, this);
-    for (j = 0, len = props.length; j &#x3c; len; j++) {
-      prop = props[j];
-      if (!add[prop]) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -5537,23 +4567,7 @@ clone = function(obj, parent) {
     <li>description and source-code<pre class="apidocCodePre">old = function (prefix) {
   return new OldSelector(this, prefix);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-ref2 = selected.remove;
-for (name in ref2) {
-  prefixes = ref2[name];
-  if (this.data[name].selector) {
-    selector = Selector.load(name, prefixes);
-    for (k = 0, len1 = prefixes.length; k &#x3c; len1; k++) {
-      prefix = prefixes[k];
-      remove.selectors.push(selector.<span class="apidocCodeKeywordSpan">old</span>(prefix));
-    }
-  } else if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-    for (l = 0, len2 = prefixes.length; l &#x3c; len2; l++) {
-      prefix = prefixes[l];
-      prefixed = &#x27;@&#x27; + prefix + name.slice(1);
-      remove[prefixed] = {
-        remove: true
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -6087,21 +5101,21 @@ Supports.prototype.remove = function(nodes, all) {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  } else {
-    return declsCache[prop] = Declaration.load(prop);
+rule = decl.parent;
+unprefixed = _this.prefixes.unprefixed(decl.prop);
+if (decl.prop === &#x27;transition&#x27; || decl.prop === &#x27;transition-property&#x27;) {
+  _this.prefixes.transition.remove(decl);
+}
+if ((ref1 = _this.prefixes.remove[decl.prop]) != null ? ref1.remove : void 0) {
+  notHack = _this.prefixes.group(decl).down(function(other) {
+    return _this.prefixes.<span class="apidocCodeKeywordSpan">normalize</span>(other.prop) === unprefixed;
+  });
+  if (unprefixed === &#x27;flex-flow&#x27;) {
+    notHack = true;
   }
-};
-
-Prefixes.prototype.unprefixed = function(prop) {
-  var value;
-  value = this.<span class="apidocCodeKeywordSpan">normalize</span>(vendor.unprefixed(prop));
-  if (value === &#x27;flex-direction&#x27;) {
-    value = &#x27;flex-flow&#x27;;
-  }
-  return value;
-};
-
-Prefixes.prototype.normalize = function(prop) {
+  if (notHack &#x26;&#x26; !_this.withHackValue(decl)) {
+    if (decl.raw(&#x27;before&#x27;).indexOf(&#x22;\n&#x22;) &#x3e; -1) {
+      _this.reduceSpaces(decl);
 ...</pre></li>
     </ul>
 
@@ -7347,22 +6361,7 @@ AtRule.prototype.process = function(node) {
   }
   return results;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-Value = require(&#x27;./value&#x27;);
-
-utils = require(&#x27;./utils&#x27;);
-
-vendor = require(&#x27;postcss/lib/vendor&#x27;);
-
-Selector.<span class="apidocCodeKeywordSpan">hack</span>(require(&#x27;./hacks/fullscreen&#x27;));
-
-Selector.hack(require(&#x27;./hacks/placeholder&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/flex&#x27;));
-
-Declaration.hack(require(&#x27;./hacks/order&#x27;));
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -7383,23 +6382,7 @@ Declaration.hack(require(&#x27;./hacks/order&#x27;));
     return new this(name, prefixes, all);
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      for (name in ref) {
-prefixes = ref[name];
-if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-  add[name] = new AtRule(name, prefixes, this);
-} else if (name === &#x27;@resolution&#x27;) {
-  add[name] = new Resolution(name, prefixes, this);
-} else if (this.data[name].selector) {
-  add.selectors.push(Selector.<span class="apidocCodeKeywordSpan">load</span>(name, prefixes, this));
-} else {
-  props = this.data[name].props;
-  if (props) {
-    value = Value.load(name, prefixes, this);
-    for (j = 0, len = props.length; j &#x3c; len; j++) {
-      prop = props[j];
-      if (!add[prop]) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -7596,23 +6579,7 @@ clone = function(obj, parent) {
     <li>description and source-code<pre class="apidocCodePre">old = function (prefix) {
   return new OldValue(this.name, prefix + this.name);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-ref2 = selected.remove;
-for (name in ref2) {
-  prefixes = ref2[name];
-  if (this.data[name].selector) {
-    selector = Selector.load(name, prefixes);
-    for (k = 0, len1 = prefixes.length; k &#x3c; len1; k++) {
-      prefix = prefixes[k];
-      remove.selectors.push(selector.<span class="apidocCodeKeywordSpan">old</span>(prefix));
-    }
-  } else if (name === &#x27;@keyframes&#x27; || name === &#x27;@viewport&#x27;) {
-    for (l = 0, len2 = prefixes.length; l &#x3c; len2; l++) {
-      prefix = prefixes[l];
-      prefixed = &#x27;@&#x27; + prefix + name.slice(1);
-      remove[prefixed] = {
-        remove: true
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
