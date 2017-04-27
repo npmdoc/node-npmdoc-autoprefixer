@@ -1,6 +1,6 @@
 # npmdoc-autoprefixer
 
-#### api documentation for  [autoprefixer (v6.7.7)](https://github.com/postcss/autoprefixer#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-autoprefixer.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-autoprefixer) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-autoprefixer.svg)](https://travis-ci.org/npmdoc/node-npmdoc-autoprefixer)
+#### basic api documentation for  [autoprefixer (v6.7.7)](https://github.com/postcss/autoprefixer#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-autoprefixer.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-autoprefixer) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-autoprefixer.svg)](https://travis-ci.org/npmdoc/node-npmdoc-autoprefixer)
 
 #### Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website
 
@@ -430,7 +430,8 @@
     "scripts": {
         "test": "gulp"
     },
-    "version": "6.7.7"
+    "version": "6.7.7",
+    "bin": {}
 }
 ```
 
